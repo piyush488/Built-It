@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" class="css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Built It</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html" class="active">Search></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="search page">
+        <h1>Find Your Next Project...</h1>
+
+        <div class="search_box">
+            <input type="text" id="searchInput" placeholder="e.g. Machine Learning, API Development..." />
+            <button id="searchBtn">Search</button>
+        </div>
+        <div class="suggestions">
+            <p>Not sure what to search? Try these:</p>
+            <button class="suggestions">web development</button>
+            <button class="suggestions">machine learning</button>
+            <button class="suggestions">data science</button>
+            <br />
+            <button class="suggestions">ai projects</button>
+            <button class="suggestions">mobile apps</button>
+            <button class="suggestions">games</button>
+        </div>
+
+
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Built It | Designed with ❤️ and creativity</p>
+    </footer>
+
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Built It – Search</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <a href="index.html" class="link">← Home</a>
+    <h1>Search</h1>
+    <div class="theme-toggle">
+      <span class="muted" id="themeLabel">Dark</span>
+      <button type="button" class="switch" id="themeToggle" aria-label="Toggle theme"></button>
+    </div>
+
+  </header>
+
+  <main class="wrap">
+    <section class="center" style="padding:40px 0;">
+      <h2>Find your next Project…</h2>
+
+      <form id="searchForm" class="search" autocomplete="off">
+        <input id="q" class="input big" type="text" placeholder="e.g. Machine Learning, Web Development..." required />
+        <button class="btn" type="submit">Search</button>
+      </form>
+
+      <p class="muted" style="margin-top:18px;">Not sure what to search? Try these:</p>
+      <div class="chips">
+        <button class="chip" data-topic="web development">web development</button>
+        <button class="chip" data-topic="machine learning">machine learning</button>
+        <button class="chip" data-topic="data science">data science</button>
+        <button class="chip" data-topic="ai projects">ai projects</button>
+        <button class="chip" data-topic="mobile apps">mobile apps</button>
+        <button class="chip" data-topic="games">games</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="center muted" style="padding:20px 0;">
+    © 2025 Built It
+  </footer>
+
+  <script src="js/search.js"></script>
+  <script src="js/theme.js"></script>
+
+</body>
+
+</html>

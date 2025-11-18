@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Built It – Results</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-results">
+<header class="topbar">
+  <a href="search.html" class="link">← Back</a>
+  <h1>Results</h1>
+  <div id="queryLabel" class="muted"></div>
+
+  <div class="theme-toggle">
+    <span class="muted" id="themeLabel">Dark</span>
+    <button type="button" class="switch" id="themeToggle"></button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="grid">
+
+    <!-- YouTube -->
+    <article class="card">
+      <div class="card-head">
+        <h3>YouTube</h3>
+        <button class="small" id="ytMore">More</button>
+      </div>
+      <ul id="ytList" class="list"></ul>
+    </article>
+
+    <!-- GitHub -->
+    <article class="card">
+      <div class="card-head">
+        <h3>GitHub</h3>
+        <button class="small" id="ghMore">More</button>
+      </div>
+      <ul id="ghList" class="list"></ul>
+    </article>
+
+    <!-- AI Summary -->
+    <article class="card" style="grid-column: span 2;">
+      <div class="card-head">
+        <h3>AI Summary</h3>
+        <button class="small" id="aiRefresh">Refresh</button>
+      </div>
+      <div id="aiSummary" class="summary">Loading…</div>
+    </article>
+
+  </section>
+</main>
+
+<footer class="center muted" style="padding:20px;">© 2025 Built It</footer>
+
+<script src="js/result.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>
